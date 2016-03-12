@@ -16,11 +16,11 @@ exports.fetch = function(load) {
 
   // fetch just needs to verify the file exists
   return new Promise(function(resolve, reject) {
-    fs.exists(load.address, function(exists) {
+    fs.exists(load.address.substr(isWindows ? 8 : 7), function(exists) {
       if (!exists)
         reject(new Error('Node binary file ' + load.address + ' does not exist.'));
       else
-        resolve();
+        resolve('');
     });
   });
 };
