@@ -1,6 +1,6 @@
 {
   "name": "systemjs-plugin-node-binary",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "node-binary.js",
   "jspmPackage": true,
   "license": "MIT"
